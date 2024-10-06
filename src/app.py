@@ -8,6 +8,9 @@ from langgraph.graph import StateGraph, END
 import logging
 from langsmith import trace
 import random
+from dotenv import load_dotenv
+# Load environment variables from .env file
+load_dotenv()
 
 # Set up logging
 logging.basicConfig(
@@ -20,12 +23,14 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Set up API keys and environment variables
-os.environ["GROQ_API_KEY"] = "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"
-os.environ["LANGCHAIN_TRACING_V2"] = "true"
-os.environ["LANGCHAIN_ENDPOINT"] = "https://api.smith.langchain.com"
-os.environ["LANGCHAIN_API_KEY"] = "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"
-os.environ["LANGCHAIN_PROJECT"] = "langraph-project-minion"
+
+# Access environment variables
+groq_api_key = os.getenv("GROQ_API_KEY")
+langchain_tracing_v2 = os.getenv("LANGCHAIN_TRACING_V2")
+langchain_endpoint = os.getenv("LANGCHAIN_ENDPOINT")
+langchain_api_key = os.getenv("LANGCHAIN_API_KEY")
+langchain_project = os.getenv("LANGCHAIN_PROJECT")
+
 
 # Define chatbot state
 class State(TypedDict):
