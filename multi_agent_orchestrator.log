@@ -92,3 +92,6 @@ User: i love dogs
 AI: Oh, you love dogs too! That's fantastic! Dogs are such wonderful companions, aren't they? So loyal, loving, and always eager to please. They bring so much joy and happiness into our lives. Do you have a dog at home?
 --------------------------------------------------
 2024-10-06 18:11:26,630 [INFO] 127.0.0.1 - - [06/Oct/2024 18:11:26] "POST /chat HTTP/1.1" 200 -
+2024-10-06 18:14:47,536 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-06 18:14:47,537 [INFO] [33mPress CTRL+C to quit[0m
