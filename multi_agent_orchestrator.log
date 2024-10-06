@@ -1,0 +1,68 @@
+2024-10-05 18:40:04,715 [INFO] 127.0.0.1 - - [05/Oct/2024 18:40:04] "POST /chat HTTP/1.1" 200 -
+2024-10-05 18:45:03,658 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-05 18:45:03,658 [INFO] [33mPress CTRL+C to quit[0m
+2024-10-05 18:45:19,001 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-05 18:45:19,010 [INFO] Routing to receptionist agent.
+2024-10-05 18:45:19,010 [INFO] [94m[receptionist agent] Received input: hello[0m
+2024-10-05 18:45:19,491 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-05 18:45:19,571 [INFO] [92m[receptionist agent] Response: Hello! How can I assist you today?[0m
+2024-10-05 18:45:19,572 [INFO] 
+User: hello
+AI: Hello! How can I assist you today?
+--------------------------------------------------
+2024-10-05 18:45:19,574 [INFO] 127.0.0.1 - - [05/Oct/2024 18:45:19] "POST /chat HTTP/1.1" 200 -
+2024-10-05 18:45:35,943 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-05 18:45:35,944 [INFO] Routing to cat agent.
+2024-10-05 18:45:35,944 [INFO] [94m[cat agent] Received input: id like to talk about cats. i need some random cat facts[0m
+2024-10-05 18:45:36,857 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-05 18:45:36,858 [INFO] [92m[cat agent] Response: Of course! Let's dive into some fascinating cat facts. Did you know that cats have a special organ near their whiskers called the "Jacobson's organ" which allows them to detect pheromones in the air? It's one of the reasons they can sense the presence of other cats even when they're not visible.[0m
+2024-10-05 18:45:36,860 [INFO] 
+User: id like to talk about cats. i need some random cat facts
+AI: Of course! Let's dive into some fascinating cat facts. Did you know that cats have a special organ near their whiskers called the "Jacobson's organ" which allows them to detect pheromones in the air? It's one of the reasons they can sense the presence of other cats even when they're not visible.
+--------------------------------------------------
+2024-10-05 18:45:36,860 [INFO] 127.0.0.1 - - [05/Oct/2024 18:45:36] "POST /chat HTTP/1.1" 200 -
+2024-10-05 18:45:46,852 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-05 18:45:46,853 [INFO] Routing to dog agent.
+2024-10-05 18:45:46,854 [INFO] [94m[dog agent] Received input: now id like a random dog fact[0m
+2024-10-05 18:45:47,472 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-05 18:45:47,474 [INFO] [92m[dog agent] Response: Ah, dogs! My favorite topic! Did you know that dogs have a unique nose print, just like humans have fingerprints? Each dog's nose print is unique and can be used to identify them. Isn't that paw-some?[0m
+2024-10-05 18:45:47,475 [INFO] 
+User: now id like a random dog fact
+AI: Ah, dogs! My favorite topic! Did you know that dogs have a unique nose print, just like humans have fingerprints? Each dog's nose print is unique and can be used to identify them. Isn't that paw-some?
+--------------------------------------------------
+2024-10-05 18:45:47,476 [INFO] 127.0.0.1 - - [05/Oct/2024 18:45:47] "POST /chat HTTP/1.1" 200 -
+2024-10-05 18:46:00,400 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-05 18:46:00,482 [INFO] Routing to monkey agent.
+2024-10-05 18:46:00,483 [INFO] [94m[monkey agent] Received input: now id like a favorite monkey fact[0m
+2024-10-05 18:46:01,258 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-05 18:46:01,259 [INFO] [92m[monkey agent] Response: Monkeys! My absolute favorite topic! Did you know that some species of monkeys, like the Capuchin, are known for their intelligence and ability to use tools? They've been observed using rocks to crack open nuts, and even sticks to fish for termites! They're just like little primates with their own set of tools. Fascinating, isn't it?[0m
+2024-10-05 18:46:01,261 [INFO] 
+User: now id like a favorite monkey fact
+AI: Monkeys! My absolute favorite topic! Did you know that some species of monkeys, like the Capuchin, are known for their intelligence and ability to use tools? They've been observed using rocks to crack open nuts, and even sticks to fish for termites! They're just like little primates with their own set of tools. Fascinating, isn't it?
+--------------------------------------------------
+2024-10-05 18:46:01,262 [INFO] 127.0.0.1 - - [05/Oct/2024 18:46:01] "POST /chat HTTP/1.1" 200 -
+2024-10-06 09:30:35,482 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-06 09:30:35,484 [INFO] Routing to receptionist agent.
+2024-10-06 09:30:35,485 [INFO] [94m[receptionist agent] Received input: i need random facts about monkeys and cats[0m
+2024-10-06 09:30:36,248 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-06 09:30:36,251 [INFO] [92m[receptionist agent] Response: Sure! Let's start with a monkey fact. Did you know that the Mandrill monkey has the largest face of any primate, including humans? Their vibrant coloration is a sign of their health and social status. Isn't that interesting?
+
+Now, for a cat fact, did you know that cats can't taste sweetness? Unlike humans, who have taste receptors for sweetness, cats lack the taste receptors for sweetness due to a genetic mutation. So, while they might enjoy the smell of your ice cream, they won't be able to taste the sweetness.[0m
+2024-10-06 09:30:36,253 [INFO] 
+User: i need random facts about monkeys and cats
+AI: Sure! Let's start with a monkey fact. Did you know that the Mandrill monkey has the largest face of any primate, including humans? Their vibrant coloration is a sign of their health and social status. Isn't that interesting?
+
+Now, for a cat fact, did you know that cats can't taste sweetness? Unlike humans, who have taste receptors for sweetness, cats lack the taste receptors for sweetness due to a genetic mutation. So, while they might enjoy the smell of your ice cream, they won't be able to taste the sweetness.
+--------------------------------------------------
+2024-10-06 09:30:36,254 [INFO] 127.0.0.1 - - [06/Oct/2024 09:30:36] "POST /chat HTTP/1.1" 200 -
+2024-10-06 09:31:34,452 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-06 09:31:34,454 [INFO] Routing to dog agent.
+2024-10-06 09:31:34,454 [INFO] [94m[dog agent] Received input: i need some random dog facts[0m
+2024-10-06 09:31:34,967 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-06 09:31:35,043 [INFO] [92m[dog agent] Response: Absolutely! Here's a random dog fact: Did you know that dogs can hear sounds that are too high for humans to hear? They can pick up sounds at a frequency as high as 40,000 Hz, while humans can only hear up to 20,000 Hz. This is why they often react to sounds that are inaudible to us.[0m
+2024-10-06 09:31:35,045 [INFO] 
+User: i need some random dog facts
+AI: Absolutely! Here's a random dog fact: Did you know that dogs can hear sounds that are too high for humans to hear? They can pick up sounds at a frequency as high as 40,000 Hz, while humans can only hear up to 20,000 Hz. This is why they often react to sounds that are inaudible to us.
+--------------------------------------------------
+2024-10-06 09:31:35,046 [INFO] 127.0.0.1 - - [06/Oct/2024 09:31:35] "POST /chat HTTP/1.1" 200 -
