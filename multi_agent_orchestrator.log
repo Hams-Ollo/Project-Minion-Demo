@@ -69,3 +69,26 @@ AI: Absolutely! Here's a random dog fact: Did you know that dogs can hear sounds
 2024-10-06 17:36:06,360 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 2024-10-06 17:36:06,360 [INFO] [33mPress CTRL+C to quit[0m
+2024-10-06 18:02:43,064 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-06 18:02:43,064 [INFO] [33mPress CTRL+C to quit[0m
+2024-10-06 18:02:54,676 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-06 18:02:54,759 [INFO] Routing to cat agent.
+2024-10-06 18:02:54,759 [INFO] [94m[cat agent] Received input: hello i love cats[0m
+2024-10-06 18:02:55,361 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-06 18:02:55,362 [INFO] [92m[cat agent] Response: Aww, hello there! I'm so glad to hear that you love cats! They are truly amazing creatures, aren't they? So cute and cuddly, yet so independent and mysterious. Do you have a cat at home?[0m
+2024-10-06 18:02:55,364 [INFO] 
+User: hello i love cats
+AI: Aww, hello there! I'm so glad to hear that you love cats! They are truly amazing creatures, aren't they? So cute and cuddly, yet so independent and mysterious. Do you have a cat at home?
+--------------------------------------------------
+2024-10-06 18:02:55,364 [INFO] 127.0.0.1 - - [06/Oct/2024 18:02:55] "POST /chat HTTP/1.1" 200 -
+2024-10-06 18:11:26,050 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-06 18:11:26,052 [INFO] Routing to dog agent.
+2024-10-06 18:11:26,052 [INFO] [94m[dog agent] Received input: i love dogs[0m
+2024-10-06 18:11:26,626 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-06 18:11:26,627 [INFO] [92m[dog agent] Response: Oh, you love dogs too! That's fantastic! Dogs are such wonderful companions, aren't they? So loyal, loving, and always eager to please. They bring so much joy and happiness into our lives. Do you have a dog at home?[0m
+2024-10-06 18:11:26,628 [INFO] 
+User: i love dogs
+AI: Oh, you love dogs too! That's fantastic! Dogs are such wonderful companions, aren't they? So loyal, loving, and always eager to please. They bring so much joy and happiness into our lives. Do you have a dog at home?
+--------------------------------------------------
+2024-10-06 18:11:26,630 [INFO] 127.0.0.1 - - [06/Oct/2024 18:11:26] "POST /chat HTTP/1.1" 200 -
