@@ -30,9 +30,11 @@ This document outlines the Git branching strategy for the Cat Chat AI project. F
 
 1. **Feature Development**:
    - Create a new feature branch from `develop`:
-     ```
+
+     ```bash
      git checkout -b feature/new-feature develop
      ```
+
    - Develop and commit changes
    - Push branch to remote repository
    - Create a Pull Request to merge into `develop`
@@ -40,35 +42,44 @@ This document outlines the Git branching strategy for the Cat Chat AI project. F
 
 2. **Preparing a Release**:
    - Create a release branch from `develop`:
+
      ```
      git checkout -b release/1.0.0 develop
      ```
+
    - Make any necessary release preparations
    - Merge release branch into `main` and `develop`:
+
      ```
      git checkout main
      git merge release/1.0.0
      git checkout develop
      git merge release/1.0.0
      ```
+
    - Tag the release in `main`:
+
      ```
      git tag -a v1.0.0 -m "Version 1.0.0"
      ```
 
 3. **Hotfixes**:
    - Create a hotfix branch from `main`:
+
      ```
      git checkout -b hotfix/critical-bug main
      ```
+
    - Fix the issue and commit changes
    - Merge hotfix into `main` and `develop`:
      ```
+
      git checkout main
      git merge hotfix/critical-bug
      git checkout develop
      git merge hotfix/critical-bug
      ```
+
    - Tag the new patch version in `main`
 
 ## Best Practices
