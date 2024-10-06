@@ -66,3 +66,6 @@ User: i need some random dog facts
 AI: Absolutely! Here's a random dog fact: Did you know that dogs can hear sounds that are too high for humans to hear? They can pick up sounds at a frequency as high as 40,000 Hz, while humans can only hear up to 20,000 Hz. This is why they often react to sounds that are inaudible to us.
 --------------------------------------------------
 2024-10-06 09:31:35,046 [INFO] 127.0.0.1 - - [06/Oct/2024 09:31:35] "POST /chat HTTP/1.1" 200 -
+2024-10-06 17:36:06,360 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-06 17:36:06,360 [INFO] [33mPress CTRL+C to quit[0m
