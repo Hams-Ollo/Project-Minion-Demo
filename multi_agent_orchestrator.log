@@ -92,3 +92,145 @@ User: i love dogs
 AI: Oh, you love dogs too! That's fantastic! Dogs are such wonderful companions, aren't they? So loyal, loving, and always eager to please. They bring so much joy and happiness into our lives. Do you have a dog at home?
 --------------------------------------------------
 2024-10-06 18:11:26,630 [INFO] 127.0.0.1 - - [06/Oct/2024 18:11:26] "POST /chat HTTP/1.1" 200 -
+2024-10-07 09:53:14,177 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 09:53:14,178 [INFO] [33mPress CTRL+C to quit[0m
+2024-10-07 09:54:54,497 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 09:54:54,510 [INFO] Routing to receptionist agent.
+2024-10-07 09:54:54,510 [INFO] [receptionist agent] Received input: Hello
+2024-10-07 09:54:54,981 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 09:54:54,985 [INFO] [receptionist agent] Response: Hello! How can I assist you today?
+2024-10-07 09:54:54,989 [INFO] 
+User: Hello
+AI: Hello! How can I assist you today?
+--------------------------------------------------
+2024-10-07 09:54:54,990 [INFO] 127.0.0.1 - - [07/Oct/2024 09:54:54] "POST /chat HTTP/1.1" 200 -
+2024-10-07 09:56:22,004 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 09:56:22,007 [INFO] Routing to receptionist agent.
+2024-10-07 09:56:22,008 [INFO] [receptionist agent] Received input: Hello
+2024-10-07 09:56:22,623 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 09:56:22,627 [INFO] [receptionist agent] Response: It seems like there was a miscommunication. Could you please provide more details about what you need help with today?
+2024-10-07 09:56:22,630 [INFO] 
+User: Hello
+AI: It seems like there was a miscommunication. Could you please provide more details about what you need help with today?
+--------------------------------------------------
+2024-10-07 09:56:22,631 [INFO] 127.0.0.1 - - [07/Oct/2024 09:56:22] "POST /chat HTTP/1.1" 200 -
+2024-10-07 09:56:41,240 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 09:56:41,241 [INFO] [33mPress CTRL+C to quit[0m
+2024-10-07 09:57:28,127 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 09:57:28,145 [INFO] Routing to receptionist agent.
+2024-10-07 09:57:28,145 [INFO] [receptionist agent] Received input: hello
+2024-10-07 09:57:28,658 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 09:57:28,663 [INFO] [receptionist agent] Response: Hello! How can I assist you today?
+2024-10-07 09:57:28,668 [INFO] 
+User: hello
+AI: Hello! How can I assist you today?
+--------------------------------------------------
+2024-10-07 09:57:28,670 [INFO] 127.0.0.1 - - [07/Oct/2024 09:57:28] "POST /chat HTTP/1.1" 200 -
+2024-10-07 09:58:30,399 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 09:58:30,403 [INFO] Routing to cat agent.
+2024-10-07 09:58:30,404 [INFO] [cat agent] Received input: I desperately need a new random cat fact
+2024-10-07 09:58:31,079 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 09:58:31,082 [INFO] [cat agent] Response: Sure! Did you know that cats have a special organ near their whiskers called the Jacobson's organ? It helps them detect pheromones and other scents that are too subtle for humans to detect.
+2024-10-07 09:58:31,086 [INFO] 
+User: I desperately need a new random cat fact
+AI: Sure! Did you know that cats have a special organ near their whiskers called the Jacobson's organ? It helps them detect pheromones and other scents that are too subtle for humans to detect.
+--------------------------------------------------
+2024-10-07 09:58:31,088 [INFO] 127.0.0.1 - - [07/Oct/2024 09:58:31] "POST /chat HTTP/1.1" 200 -
+2024-10-07 10:43:36,775 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:43:36,777 [INFO] Routing to monkey agent.
+2024-10-07 10:43:36,778 [INFO] [monkey agent] Received input: I casually need some monkey random facts about their favorite food.
+2024-10-07 10:43:37,365 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:43:37,370 [INFO] [monkey agent] Response: Of course! Monkeys are fascinating creatures. Did you know that monkeys primarily eat fruits, leaves, and insects? Some species, like the howler monkey, even eat flowers and tree bark. They have a diverse diet, just like us!
+2024-10-07 10:43:37,374 [INFO] 
+User: I casually need some monkey random facts about their favorite food.
+AI: Of course! Monkeys are fascinating creatures. Did you know that monkeys primarily eat fruits, leaves, and insects? Some species, like the howler monkey, even eat flowers and tree bark. They have a diverse diet, just like us!
+--------------------------------------------------
+2024-10-07 10:43:37,377 [INFO] 127.0.0.1 - - [07/Oct/2024 10:43:37] "POST /chat HTTP/1.1" 200 -
+2024-10-07 10:56:34,306 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 10:56:34,307 [INFO] [33mPress CTRL+C to quit[0m
+2024-10-07 10:56:43,312 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:56:43,325 [INFO] Routing to receptionist agent.
+2024-10-07 10:56:43,326 [INFO] [receptionist agent] Received input: hello
+2024-10-07 10:56:43,837 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:56:43,840 [INFO] [receptionist agent] Response: Hello! How can I assist you today?
+2024-10-07 10:56:43,845 [INFO] 
+User: hello
+AI: Hello! How can I assist you today?
+--------------------------------------------------
+2024-10-07 10:56:43,847 [INFO] 127.0.0.1 - - [07/Oct/2024 10:56:43] "POST /chat HTTP/1.1" 200 -
+2024-10-07 10:57:04,969 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:57:04,972 [INFO] Routing to cat agent.
+2024-10-07 10:57:04,973 [INFO] [cat agent] Received input: I desperately need some random cat facts!
+2024-10-07 10:57:05,528 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:57:05,531 [INFO] [cat agent] Response: Of course! Did you know that cats have a unique nose print, just like human fingerprints? Each cat's nose print is different, making them one-of-a-kind.
+2024-10-07 10:57:05,534 [INFO] 
+User: I desperately need some random cat facts!
+AI: Of course! Did you know that cats have a unique nose print, just like human fingerprints? Each cat's nose print is different, making them one-of-a-kind.
+--------------------------------------------------
+2024-10-07 10:57:05,535 [INFO] 127.0.0.1 - - [07/Oct/2024 10:57:05] "POST /chat HTTP/1.1" 200 -
+2024-10-07 10:57:30,787 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:57:30,792 [INFO] Routing to monkey agent.
+2024-10-07 10:57:30,793 [INFO] [monkey agent] Received input: That was great. Now i casually need some monkey random facts
+2024-10-07 10:57:31,398 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:57:31,403 [INFO] [monkey agent] Response: Ah, monkeys! They are fascinating creatures, aren't they? Did you know that there are over 260 species of monkeys, and they can be found in various parts of the world, including Central and South America, Africa, and Asia?
+2024-10-07 10:57:31,407 [INFO] 
+User: That was great. Now i casually need some monkey random facts
+AI: Ah, monkeys! They are fascinating creatures, aren't they? Did you know that there are over 260 species of monkeys, and they can be found in various parts of the world, including Central and South America, Africa, and Asia?
+--------------------------------------------------
+2024-10-07 10:57:31,410 [INFO] 127.0.0.1 - - [07/Oct/2024 10:57:31] "POST /chat HTTP/1.1" 200 -
+2024-10-07 10:57:55,592 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:57:55,597 [INFO] Routing to dog agent.
+2024-10-07 10:57:55,598 [INFO] [dog agent] Received input: Quick. I need some random dog facts before my kids come home.
+2024-10-07 10:57:56,226 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:57:56,230 [INFO] [dog agent] Response: Absolutely! Dogs are truly amazing animals. Did you know that dogs have a sense of time? They know the difference between an hour and five. If you leave a dog alone for five minutes, it feels the same as if a human was left alone for three hours.
+2024-10-07 10:57:56,233 [INFO] 
+User: Quick. I need some random dog facts before my kids come home.
+AI: Absolutely! Dogs are truly amazing animals. Did you know that dogs have a sense of time? They know the difference between an hour and five. If you leave a dog alone for five minutes, it feels the same as if a human was left alone for three hours.
+--------------------------------------------------
+2024-10-07 10:57:56,235 [INFO] 127.0.0.1 - - [07/Oct/2024 10:57:56] "POST /chat HTTP/1.1" 200 -
+2024-10-07 10:58:17,882 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:58:17,887 [INFO] Routing to receptionist agent.
+2024-10-07 10:58:17,888 [INFO] [receptionist agent] Received input: What minions are able to assist me today?
+2024-10-07 10:58:18,570 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:58:18,577 [INFO] [receptionist agent] Response: I'm here to help you with any questions or needs you have. I can provide information, direct you to the right resources, and assist with scheduling or organizing your day. Just let me know how I can assist you further!
+2024-10-07 10:58:18,583 [INFO] 
+User: What minions are able to assist me today?
+AI: I'm here to help you with any questions or needs you have. I can provide information, direct you to the right resources, and assist with scheduling or organizing your day. Just let me know how I can assist you further!
+--------------------------------------------------
+2024-10-07 10:58:18,586 [INFO] 127.0.0.1 - - [07/Oct/2024 10:58:18] "POST /chat HTTP/1.1" 200 -
+2024-10-07 10:58:50,934 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:58:50,938 [INFO] Routing to receptionist agent.
+2024-10-07 10:58:50,939 [INFO] [receptionist agent] Received input: I need to reach the receptionist agent
+2024-10-07 10:58:51,471 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 10:58:51,473 [INFO] [receptionist agent] Response: I'm the receptionist agent, here to help you with any questions or needs you have. How can I assist you today?
+2024-10-07 10:58:51,477 [INFO] 
+User: I need to reach the receptionist agent
+AI: I'm the receptionist agent, here to help you with any questions or needs you have. How can I assist you today?
+--------------------------------------------------
+2024-10-07 10:58:51,478 [INFO] 127.0.0.1 - - [07/Oct/2024 10:58:51] "POST /chat HTTP/1.1" 200 -
+2024-10-07 11:03:45,418 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-07 11:03:45,419 [INFO] [33mPress CTRL+C to quit[0m
+2024-10-07 11:03:54,386 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 11:03:54,400 [INFO] Routing to receptionist agent.
+2024-10-07 11:03:54,401 [INFO] [receptionist agent] Received input: Hello
+2024-10-07 11:03:54,847 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 11:03:54,850 [INFO] [receptionist agent] Response: Hello! How can I assist you today?
+2024-10-07 11:03:54,853 [INFO] 
+User: Hello
+AI: Hello! How can I assist you today?
+--------------------------------------------------
+2024-10-07 11:03:54,855 [INFO] 127.0.0.1 - - [07/Oct/2024 11:03:54] "POST /chat HTTP/1.1" 200 -
+2024-10-07 11:09:56,248 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 11:09:56,252 [INFO] Routing to cat agent.
+2024-10-07 11:09:56,252 [INFO] [cat agent] Received input: I need a random cat facts
+2024-10-07 11:09:56,873 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-07 11:09:56,879 [INFO] [cat agent] Response: Did you know that cats have a special organ called the Jacobson's organ, which allows them to detect pheromones and other scents that are too subtle for humans to detect? It's located in the nasal cavity and helps them navigate their environment and communicate with other cats.
+2024-10-07 11:09:56,886 [INFO] 
+User: I need a random cat facts
+AI: Did you know that cats have a special organ called the Jacobson's organ, which allows them to detect pheromones and other scents that are too subtle for humans to detect? It's located in the nasal cavity and helps them navigate their environment and communicate with other cats.
+--------------------------------------------------
+2024-10-07 11:09:56,889 [INFO] 127.0.0.1 - - [07/Oct/2024 11:09:56] "POST /chat HTTP/1.1" 200 -
