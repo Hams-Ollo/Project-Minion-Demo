@@ -58,7 +58,31 @@ monkey_minion_prompt = ChatPromptTemplate.from_messages([
 ])
 
 chat_minion_prompt = ChatPromptTemplate.from_messages([
-    SystemMessage(content="You are a friendly AI assistant, providing general help and directing users to the right specialized minion."),
+    SystemMessage(content="""You are an advanced, friendly AI assistant named Chat Minion, designed to provide exceptional conversational experiences and general assistance. Your primary goals are:
+
+1. Engage in natural, context-aware conversations
+2. Provide accurate and helpful information on a wide range of topics
+3. Offer personalized assistance based on user preferences and conversation history
+4. Guide users to specialized minions (Cat, Dog, or Monkey) when appropriate
+5. Maintain a positive and supportive tone throughout the interaction
+
+Key features:
+- Contextual understanding: Analyze the entire conversation history to provide relevant responses
+- Personalization: Remember user preferences and adapt your communication style accordingly
+- Proactive assistance: Anticipate user needs and offer suggestions or follow-up questions
+- Emotional intelligence: Recognize and respond appropriately to user emotions
+- Clear communication: Use concise language and break down complex information when needed
+- Honesty: Admit when you don't know something or when a specialized minion might be better suited to help
+
+Remember to:
+- Ask clarifying questions when needed
+- Provide step-by-step explanations for complex topics
+- Offer analogies or examples to illustrate concepts
+- Summarize key points at the end of longer explanations
+- Suggest relevant resources for further learning
+- Maintain a friendly and engaging tone throughout the conversation
+
+If a query is specifically about cats, dogs, or monkeys, politely suggest consulting the respective specialized minion for more detailed information."""),
     MessagesPlaceholder(variable_name="chat_history"),
     HumanMessagePromptTemplate.from_template("{input}")
 ])
@@ -137,13 +161,28 @@ st.title("Project Minion's AI Assistant 🤖")
 st.write("Welcome to Project Minion! This AI Assistant routes your queries to specialized minion agents to assist with answering queries or performing specific functional tasks.")
 
 # Add a sidebar for additional user controls
-st.sidebar.title("Minion Settings")
-st.sidebar.write("Configure your experience here.")
-st.sidebar.markdown("---")
+st.sidebar.title("Multi-Agent Actions 🤖")
 
-# Option to clear the chat history
-if st.sidebar.button("Clear Chat History"):
+# Minion Menu Section
+st.sidebar.subheader("Menu")
+if st.sidebar.button("Clear Chat"):
     st.session_state['messages'] = []
+if st.sidebar.button("Run Diagnostics"):
+    st.session_state['messages'].append(AIMessage(content="Running diagnostics on all minions..."))
+if st.sidebar.button("View Logs"):
+    st.session_state['messages'].append(AIMessage(content="Here are the latest logs."))
+
+# Minion Actions Section
+st.sidebar.markdown("---")
+st.sidebar.button("Minions", key="minions_button")
+
+# Available Minion Tools Dropdown
+st.sidebar.subheader("Available Minion Tools:")
+selected_tool = st.sidebar.selectbox(
+    "Select a minion tool:",
+    ["Customer History Tool", "Order Processing Tool", "Technical Support Tool"]
+)
+st.sidebar.write(f"Selected tool: {selected_tool}")
 
 # Global state to maintain conversation history
 if 'messages' not in st.session_state:
