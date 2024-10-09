@@ -180,7 +180,7 @@ st.sidebar.button("Minions", key="minions_button")
 st.sidebar.subheader("Available Minion Tools:")
 selected_tool = st.sidebar.selectbox(
     "Select a minion tool:",
-    ["Customer History Tool", "Order Processing Tool", "Technical Support Tool"]
+    ["Knowledge Management Tool", "Dashboard Viewer Tool", "Technical Support Tool"]
 )
 st.sidebar.write(f"Selected tool: {selected_tool}")
 
