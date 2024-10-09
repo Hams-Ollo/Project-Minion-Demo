@@ -161,14 +161,14 @@ st.title("Project Minion's AI Assistant 🤖")
 st.write("Welcome to Project Minion! This AI Assistant routes your queries to specialized minion agents to assist with answering queries or performing specific functional tasks.")
 
 # Add a sidebar for additional user controls
-st.sidebar.title("Multi-Agent Actions 🤖")
+st.sidebar.title("Minion Toolkit 🤖")
 
 # Minion Menu Section
 st.sidebar.subheader("Menu")
 if st.sidebar.button("Clear Chat"):
     st.session_state['messages'] = []
 if st.sidebar.button("Run Diagnostics"):
-    st.session_state['messages'].append(AIMessage(content="Running diagnostics on all minions..."))
+    st.session_state['messages'].append(AIMessage(content="Running diagnostics on all Minions..."))
 if st.sidebar.button("View Logs"):
     st.session_state['messages'].append(AIMessage(content="Here are the latest logs."))
 
