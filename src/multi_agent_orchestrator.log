@@ -1,0 +1,5 @@
+2024-10-09 13:46:01,060 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 13:46:01,066 [INFO] Routing to receptionist agent.
+2024-10-09 13:46:01,067 [INFO] [94m[receptionist agent] Received input: Hello[0m
+2024-10-09 13:46:01,290 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 13:46:01,292 [INFO] [92m[receptionist agent] Response: Hello! How can I assist you today?[0m

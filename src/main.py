@@ -128,15 +128,30 @@ def invoke_agent(state: State, model: ChatGroq, prompt: ChatPromptTemplate, agen
         return {"messages": state['messages'] + [AIMessage(content="I apologize, but I encountered an error. Can we try again?")]}    
 
 # Initialize Streamlit app
-st.title("Multi-Agent Chatbot with Streamlit")
-st.write("This chatbot routes your queries to specialized agents who love to talk about cats, dogs, monkeys, or provide general assistance.")
+st.set_page_config(page_title="Project Minion AI Assistant", page_icon="🤖")
+st.title("Project Minion AI Assistant 🤖")
+st.write("Welcome to Project Minion AI Assistant! This chatbot routes your queries to specialized agents who love to talk about cats, dogs, monkeys, or provide general assistance.")
+
+# Add a sidebar for additional user controls
+st.sidebar.title("Chat Settings")
+st.sidebar.write("Configure your chat experience here.")
+st.sidebar.markdown("---")
+
+# Option to clear the chat history
+if st.sidebar.button("Clear Chat History"):
+    st.session_state['messages'] = []
 
 # Global state to maintain conversation history
 if 'messages' not in st.session_state:
     st.session_state['messages'] = []
 
-# User input
-user_question = st.text_input("Enter your question:")
+# User input with an improved UI
+def user_input_widget():
+    st.text_input("Enter your question:", key="user_input", placeholder="Ask me anything about cats, dogs, monkeys, or general topics...")
+    return st.session_state.user_input
+
+user_question = user_input_widget()
+
 if st.button("Send") and user_question:
     # Update state with user's question
     st.session_state['messages'].append(HumanMessage(content=user_question))
@@ -149,9 +164,17 @@ if st.button("Send") and user_question:
         logger.error(f"Error in orchestrator or agent: {str(e)}", exc_info=True)
         st.session_state['messages'].append(AIMessage(content="An error occurred while processing your request."))
 
-# Display conversation history
+# Display conversation history in a chat-like format with enhanced UI
 for message in st.session_state['messages']:
     if isinstance(message, HumanMessage):
-        st.write(f"**You:** {message.content}")
+        st.markdown(f"<div style='background-color:#e1f5fe; padding:10px; border-radius:10px; margin-bottom:5px;'><strong>You:</strong> {message.content}</div>", unsafe_allow_html=True)
     elif isinstance(message, AIMessage):
-        st.write(f"**Chat Assistant:** {message.content}")
+        st.markdown(f"<div style='background-color:#f0f4c3; padding:10px; border-radius:10px; margin-bottom:5px;'><strong>🤖 Minion AI:</strong> {message.content}</div>", unsafe_allow_html=True)
+
+# Footer section with credits and helpful information
+st.sidebar.markdown("---")
+st.sidebar.write("**About Project Minion AI**")
+st.sidebar.write("Project Minion AI is a multi-agent chatbot that helps answer your questions about cats, dogs, monkeys, and more. Built with Streamlit for an intuitive user experience.")
+
+# Add some styling to enhance the user experience
+st.markdown("<style> \n    .reportview-container { \n        background: #f5f5f5;\n    }\n    .sidebar .sidebar-content {\n        background: #f0f4f7;\n    }\n</style>", unsafe_allow_html=True)
