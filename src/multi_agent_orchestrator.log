@@ -3,3 +3,13 @@
 2024-10-09 13:46:01,067 [INFO] [94m[receptionist agent] Received input: Hello[0m
 2024-10-09 13:46:01,290 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
 2024-10-09 13:46:01,292 [INFO] [92m[receptionist agent] Response: Hello! How can I assist you today?[0m
+2024-10-09 14:15:25,407 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 14:15:25,416 [INFO] Routing to cat agent.
+2024-10-09 14:15:25,416 [INFO] [94m[cat agent] Received input: Hello. I love cats[0m
+2024-10-09 14:15:25,795 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 14:15:25,796 [INFO] [92m[cat agent] Response: Ah, a fellow feline enthusiast! Cats are truly the epitome of elegance and grace, don't you think? Their independent nature and playful antics make them such fascinating creatures. Do you have a cat at home?[0m
+2024-10-09 14:48:49,313 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 14:48:49,320 [INFO] Routing to cat agent.
+2024-10-09 14:48:49,320 [INFO] [94m[cat agent] Received input: hello there i love cats[0m
+2024-10-09 14:48:49,673 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 14:48:49,675 [INFO] [92m[cat agent] Response: Hello! I'm so glad to hear that you love cats! They are truly wonderful creatures, aren't they? Their independence, their agility, and their adorable little faces - what's not to love?[0m

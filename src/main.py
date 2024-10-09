@@ -167,9 +167,9 @@ if st.button("Send") and user_question:
 # Display conversation history in a chat-like format with enhanced UI
 for message in st.session_state['messages']:
     if isinstance(message, HumanMessage):
-        st.markdown(f"<div style='background-color:#e1f5fe; padding:10px; border-radius:10px; margin-bottom:5px;'><strong>You:</strong> {message.content}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='background-color:#2a2a2a; padding:10px; border-radius:10px; margin-bottom:5px; color: #ffffff;'><strong>You:</strong> {message.content}</div>", unsafe_allow_html=True)
     elif isinstance(message, AIMessage):
-        st.markdown(f"<div style='background-color:#f0f4c3; padding:10px; border-radius:10px; margin-bottom:5px;'><strong>🤖 Minion AI:</strong> {message.content}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='background-color:#3a3a3a; padding:10px; border-radius:10px; margin-bottom:5px; color: #ffffff;'><strong>🤖 Minion AI:</strong> {message.content}</div>", unsafe_allow_html=True)
 
 # Footer section with credits and helpful information
 st.sidebar.markdown("---")
@@ -177,4 +177,4 @@ st.sidebar.write("**About Project Minion AI**")
 st.sidebar.write("Project Minion AI is a multi-agent chatbot that helps answer your questions about cats, dogs, monkeys, and more. Built with Streamlit for an intuitive user experience.")
 
 # Add some styling to enhance the user experience
-st.markdown("<style> \n    .reportview-container { \n        background: #f5f5f5;\n    }\n    .sidebar .sidebar-content {\n        background: #f0f4f7;\n    }\n</style>", unsafe_allow_html=True)
+st.markdown("<style> \n    .reportview-container { \n        background: #1e1e1e;\n    }\n    .sidebar .sidebar-content {\n        background: #1e1e1e;\n    }\n    .stTextInput > div > input {\n        background-color: #333333;\n        color: #ffffff;\n    }\n    .stButton > button {\n        background-color: #4a4a4a;\n        color: #ffffff;\n    }\n</style>", unsafe_allow_html=True)
