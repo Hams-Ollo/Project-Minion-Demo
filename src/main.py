@@ -158,29 +158,29 @@ import logging
 # Initialize Streamlit app
 st.set_page_config(page_title="Project Minion", page_icon="🤖")
 st.title("Project Minion 🤖")
-st.write("Welcome to Project Minion! This AI Assistant routes your queries to specialized minion agents to assist with answering queries or performing specific tasks.")
+st.write("Welcome to Project Minion! This AI Assistant routes your queries to specialized minion agents to assist with answering queries or performing specific tasks. 🚀")
 
 # Add a sidebar for additional user controls
-st.sidebar.title("Minion Toolkit 🤖")
+st.sidebar.title("Project Minion Toolkit 🛠️")
 
 # Minion Menu Section
-st.sidebar.subheader("Menu")
-if st.sidebar.button("Clear Chat"):
+st.sidebar.subheader("Menu 📋")
+if st.sidebar.button("Clear Chat 🗑️"):
     st.session_state['messages'] = []
-if st.sidebar.button("Run Diagnostics"):
+if st.sidebar.button("Run Diagnostics 🩺"):
     st.session_state['messages'].append(AIMessage(content="Running diagnostics on all Minions..."))
-if st.sidebar.button("View Logs"):
+if st.sidebar.button("View Logs 📜"):
     st.session_state['messages'].append(AIMessage(content="Here are the latest logs."))
 
 # Minion Actions Section
 st.sidebar.markdown("---")
-st.sidebar.button("Minions", key="minions_button")
+st.sidebar.button("Minions 🤖", key="minions_button")
 
 # Available Minion Tools Dropdown
-st.sidebar.subheader("Available Minion Tools:")
+st.sidebar.subheader("Available Minion Tools 🧰:")
 selected_tool = st.sidebar.selectbox(
     "Select a minion tool:",
-    ["Knowledge Management Tool", "Dashboard Viewer Tool", "Technical Support Tool"]
+    ["📚 Knowledge Management Tool", "📊 Dashboard Viewer Tool", "🛠️ Technical Support Tool"]
 )
 st.sidebar.write(f"Selected tool: {selected_tool}")
 
@@ -209,21 +209,21 @@ def send_query():
 # Display conversation history in a chat-like format with enhanced UI
 for message in st.session_state['messages']:
     if isinstance(message, HumanMessage):
-        st.markdown(f"<div style='background-color:#2a2a2a; padding:10px; border-radius:10px; margin-bottom:5px; color: #ffffff;'><strong>You:</strong> {message.content}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='background-color:#2a2a2a; padding:10px; border-radius:10px; margin-bottom:5px; color: #ffffff;'><strong>You:</strong> {message.content} 💬</div>", unsafe_allow_html=True)
     elif isinstance(message, AIMessage):
-        st.markdown(f"<div style='background-color:#3a3a3a; padding:10px; border-radius:10px; margin-bottom:5px; color: #ffffff;'><strong>🤖 Minion AI:</strong> {message.content}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div style='background-color:#3a3a3a; padding:10px; border-radius:10px; margin-bottom:5px; color: #ffffff;'><strong>🤖 Minion AI:</strong> {message.content} 🤖</div>", unsafe_allow_html=True)
 
 # User input with an improved UI
 def user_input_widget():
-    return st.text_input("Enter your query:", key="user_input", placeholder="Ask me anything...", on_change=send_query)
+    return st.text_input("Enter your query:", key="user_input", placeholder="Ask me anything... 💬", on_change=send_query)
 
 # Display the user input widget below the chat history
 user_input_widget()
 
 # Footer section with credits and helpful information
 st.sidebar.markdown("---")
-st.sidebar.write("**About Project Minion AI**")
-st.sidebar.write("Project Minion is a multi-minion AI solution that aids the user in their tasks using its network of specialized minion agents.")
+st.sidebar.write("**About Project Minion AI** 📚")
+st.sidebar.write("Project Minion is a multi-minion AI solution that aids the user in their tasks using its network of specialized minion agents. 🧠")
 
 # Add some styling to enhance the user experience
 st.markdown("<style> \n    .reportview-container { \n        background: #1e1e1e;\n    }\n    .sidebar .sidebar-content {\n        background: #1e1e1e;\n    }\n    .stTextInput > div > input {\n        background-color: #333333;\n        color: #ffffff;\n    }\n    .stButton > button {\n        background-color: #4a4a4a;\n        color: #ffffff;\n}</style>", unsafe_allow_html=True)
