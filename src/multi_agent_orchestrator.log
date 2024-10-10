@@ -1,0 +1,131 @@
+2024-10-09 13:46:01,060 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 13:46:01,066 [INFO] Routing to receptionist agent.
+2024-10-09 13:46:01,067 [INFO] [94m[receptionist agent] Received input: Hello[0m
+2024-10-09 13:46:01,290 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 13:46:01,292 [INFO] [92m[receptionist agent] Response: Hello! How can I assist you today?[0m
+2024-10-09 14:15:25,407 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 14:15:25,416 [INFO] Routing to cat agent.
+2024-10-09 14:15:25,416 [INFO] [94m[cat agent] Received input: Hello. I love cats[0m
+2024-10-09 14:15:25,795 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 14:15:25,796 [INFO] [92m[cat agent] Response: Ah, a fellow feline enthusiast! Cats are truly the epitome of elegance and grace, don't you think? Their independent nature and playful antics make them such fascinating creatures. Do you have a cat at home?[0m
+2024-10-09 14:48:49,313 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 14:48:49,320 [INFO] Routing to cat agent.
+2024-10-09 14:48:49,320 [INFO] [94m[cat agent] Received input: hello there i love cats[0m
+2024-10-09 14:48:49,673 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 14:48:49,675 [INFO] [92m[cat agent] Response: Hello! I'm so glad to hear that you love cats! They are truly wonderful creatures, aren't they? Their independence, their agility, and their adorable little faces - what's not to love?[0m
+2024-10-09 15:20:41,826 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 15:20:41,829 [INFO] Routing to cat agent.
+2024-10-09 15:20:41,829 [INFO] [94m[cat agent] Received input: hello there i love cats[0m
+2024-10-09 15:20:42,187 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 15:20:42,189 [INFO] [92m[cat agent] Response: Hello! Oh, you love cats? Well, we have a lot in common then! Cats are just the best, aren't they? Their little furry faces, their adorable meows, and their playful antics - just irresistible! Do you have a cat at home?[0m
+2024-10-09 15:28:30,416 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 15:28:30,427 [INFO] Routing to receptionist agent.
+2024-10-09 15:28:30,428 [INFO] [94m[receptionist agent] Received input: Hello there. What are you able to assist me with?[0m
+2024-10-09 15:28:30,806 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 15:28:30,808 [INFO] [92m[receptionist agent] Response: Hello! I'm here to help you with any questions or needs you have. Whether it's scheduling an appointment, providing information, or directing you to the right person, I'm here to assist you. How can I help you today?[0m
+2024-10-09 15:54:47,573 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 15:54:47,574 [INFO] Routing to cat minion.
+2024-10-09 15:54:47,574 [INFO] [94m[cat minion] Received input: I love cats[0m
+2024-10-09 15:54:47,943 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 15:54:47,944 [INFO] [92m[cat minion] Response: Oh, me too! Cats are just the best, aren't they? Their soft fur, their playful pounces, and their adorable little meows. Do you have a cat at home?[0m
+2024-10-09 15:55:02,816 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 15:55:02,817 [INFO] Routing to dog minion.
+2024-10-09 15:55:02,817 [INFO] [94m[dog minion] Received input: i love dogs[0m
+2024-10-09 15:55:03,204 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 15:55:03,205 [INFO] [92m[dog minion] Response: Oh, dogs! They're absolutely wonderful, aren't they? Their wagging tails, their joyful barks, and their unconditional love. I could talk about dogs all day! Do you have a dog at home?[0m
+2024-10-09 15:55:19,968 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 15:55:19,969 [INFO] Routing to monkey minion.
+2024-10-09 15:55:19,969 [INFO] [94m[monkey minion] Received input: i love monkeys[0m
+2024-10-09 15:55:20,374 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 15:55:20,375 [INFO] [92m[monkey minion] Response: Ah, monkeys! Oh, how I absolutely adore monkeys! Their agility, their intelligence, and their playful antics. They're just the most fascinating creatures, don't you think? Have you ever had the chance to see monkeys up close?[0m
+2024-10-09 15:55:35,646 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 15:55:35,647 [INFO] Routing to chat minion.
+2024-10-09 15:55:35,648 [INFO] [94m[chat minion] Received input: I need some assistance today[0m
+2024-10-09 15:55:35,938 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 15:55:35,940 [INFO] [92m[chat minion] Response: Of course! I'm here to help. What kind of assistance do you need today?[0m
+2024-10-09 16:22:28,077 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:22:28,079 [INFO] Routing to chat minion.
+2024-10-09 16:22:28,080 [INFO] [94m[chat minion] Received input: hello there [0m
+2024-10-09 16:22:28,314 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:22:28,315 [INFO] [92m[chat minion] Response: Hello! How can I assist you today?[0m
+2024-10-09 16:22:42,506 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:22:42,508 [INFO] Routing to chat minion.
+2024-10-09 16:22:42,508 [INFO] [94m[chat minion] Received input: what can you help me with today?[0m
+2024-10-09 16:22:42,901 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:22:42,903 [INFO] [92m[chat minion] Response: I can help with a variety of tasks such as scheduling, reminders, general information, and more. If you have a specific task in mind, I can assist you directly or guide you to the appropriate specialized assistant.[0m
+2024-10-09 16:24:35,123 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:24:35,126 [INFO] Routing to chat minion.
+2024-10-09 16:24:35,126 [INFO] [94m[chat minion] Received input: Hello there[0m
+2024-10-09 16:24:35,368 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:24:35,370 [INFO] [92m[chat minion] Response: Hi! How can I assist you today?[0m
+2024-10-09 16:24:58,394 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:24:58,396 [INFO] Routing to cat minion.
+2024-10-09 16:24:58,396 [INFO] [94m[cat minion] Received input: i need a random cat fact right away[0m
+2024-10-09 16:24:58,715 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:24:58,717 [INFO] [92m[cat minion] Response: Did you know that cats have a special organ called the Jacobson's organ, which allows them to detect pheromones and other scents that are not detectable by humans?[0m
+2024-10-09 16:32:56,180 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:32:56,181 [INFO] Routing to chat minion.
+2024-10-09 16:32:56,181 [INFO] [94m[chat minion] Received input: hello[0m
+2024-10-09 16:32:56,526 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:32:56,528 [INFO] [92m[chat minion] Response: Hello! How can I assist you today?[0m
+2024-10-09 16:33:09,359 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:33:09,360 [INFO] Routing to monkey minion.
+2024-10-09 16:33:09,360 [INFO] [94m[monkey minion] Received input: i need some random monkey facts[0m
+2024-10-09 16:33:10,250 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:33:10,251 [INFO] [92m[monkey minion] Response: Sure! Here are a few random monkey facts:
+
+1. Monkeys have a highly developed sense of sight and can see colors. Some species of monkeys can even see in stereo vision, which helps them judge distances.
+
+2. Monkeys are very social animals and live in groups called troops. Some species of monkeys, like the howler monkey, can live in troops of up to 40 members.
+
+3. Monkeys are intelligent animals and use tools in their daily lives. For example, some species of monkeys use sticks to dig up termites for food.
+
+4. Monkeys have a unique way of communicating with each other. They use a variety of sounds, including screams, barks, and grunts, as well as body language and facial expressions.
+
+5. Monkeys are agile and nimble, and they spend most of their time in trees. Some species of monkeys, like the spider monkey, can even swing from tree to tree using their long arms and tails.[0m
+2024-10-09 16:33:33,266 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:33:33,267 [INFO] Routing to chat minion.
+2024-10-09 16:33:33,267 [INFO] [94m[chat minion] Received input: Hello there[0m
+2024-10-09 16:33:33,533 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:33:33,535 [INFO] [92m[chat minion] Response: Hi! How can I assist you today?[0m
+2024-10-09 16:33:45,363 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:33:45,365 [INFO] Routing to chat minion.
+2024-10-09 16:33:45,365 [INFO] [94m[chat minion] Received input: What can you assist me with today?[0m
+2024-10-09 16:33:45,659 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:33:45,660 [INFO] [92m[chat minion] Response: I can help with a variety of tasks. Do you need assistance with scheduling, research, or perhaps something else?[0m
+2024-10-09 16:34:13,629 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:34:13,631 [INFO] Routing to cat minion.
+2024-10-09 16:34:13,631 [INFO] [94m[cat minion] Received input: I need some random cat facts asap![0m
+2024-10-09 16:34:14,371 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 16:34:14,372 [INFO] [92m[cat minion] Response: Sure, I can provide some fun cat facts for you. Here are a few:
+
+1. Cats have a special organ called the Jacobson's organ, which allows them to sense pheromones that are invisible to humans.
+
+2. Cats can't taste sweetness. They have taste receptors only for salty, sour, and bitter flavors.
+
+3. Cats can hear sounds that are too faint for humans to detect. They can also hear sounds at a much higher frequency than humans can.
+
+4. Cats can't see directly under their noses. This is because their eyes are positioned on the sides of their head, which allows them to have a wider field of vision.
+
+5. Cats can sleep for up to 16 hours a day. They are crepuscular animals, meaning they are most active at dawn and dusk.[0m
+2024-10-09 19:30:10,190 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 19:30:10,192 [INFO] Routing to chat minion.
+2024-10-09 19:30:10,192 [INFO] [94m[chat minion] Received input: hello there[0m
+2024-10-09 19:30:10,455 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 19:30:10,456 [INFO] [92m[chat minion] Response: Hello! It's great to meet you. How can I assist you today?[0m
+2024-10-09 19:30:24,553 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 19:30:24,555 [INFO] Routing to chat minion.
+2024-10-09 19:30:24,555 [INFO] [94m[chat minion] Received input: What can you assist me with?[0m
+2024-10-09 19:30:24,965 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 19:30:24,967 [INFO] [92m[chat minion] Response: I can help with a wide range of topics, from providing information on various subjects, to offering personalized assistance based on your preferences and needs. I can also guide you to specialized minions for more detailed information on cats, dogs, or monkeys. What would you like to know or discuss today?[0m
+2024-10-09 19:31:23,945 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 19:31:23,947 [INFO] Routing to chat minion.
+2024-10-09 19:31:23,947 [INFO] [94m[chat minion] Received input: provide me a sample python script to print Meow World![0m
+2024-10-09 19:31:24,389 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 19:31:24,390 [INFO] [92m[chat minion] Response: Sure, here's a simple Python script that prints "Meow World!":
+
+```python
+print("Meow World!")
+```
+
+You can save this script as a `.py` file and run it using a Python interpreter to see the output. If you have any questions about Python or need further assistance with programming, feel free to ask![0m

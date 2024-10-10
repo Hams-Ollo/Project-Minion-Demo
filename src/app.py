@@ -46,27 +46,32 @@ monkey_model = ChatGroq(temperature=0.7, model_name="llama3-groq-70b-8192-tool-u
 receptionist_model = ChatGroq(temperature=0.7, model_name="llama3-groq-70b-8192-tool-use-preview")
 orchestrator_model = ChatGroq(temperature=0.7, model_name="llama3-groq-70b-8192-tool-use-preview")
 
+<<<<<<< HEAD
 # Define prompt templates for each agent
 # These prompts are what the agent sees when generating a response, setting the tone and context.
 cat_prompt = ChatPromptTemplate.from_messages([
+=======
+# Prompt templates
+cat_minion_prompt = ChatPromptTemplate.from_messages([
+>>>>>>> develop
     SystemMessage(content="You are a friendly AI assistant who loves to talk about cats."),
     MessagesPlaceholder(variable_name="chat_history"),
     HumanMessagePromptTemplate.from_template("{input}")
 ])
 
-dog_prompt = ChatPromptTemplate.from_messages([
+dog_minion_prompt = ChatPromptTemplate.from_messages([
     SystemMessage(content="You are a friendly AI assistant who loves to talk about dogs."),
     MessagesPlaceholder(variable_name="chat_history"),
     HumanMessagePromptTemplate.from_template("{input}")
 ])
 
-monkey_prompt = ChatPromptTemplate.from_messages([
+monkey_minion_prompt = ChatPromptTemplate.from_messages([
     SystemMessage(content="You are a friendly AI assistant who loves to talk about monkeys."),
     MessagesPlaceholder(variable_name="chat_history"),
     HumanMessagePromptTemplate.from_template("{input}")
 ])
 
-receptionist_prompt = ChatPromptTemplate.from_messages([
+chat_minion_prompt = ChatPromptTemplate.from_messages([
     SystemMessage(content="You are a friendly AI receptionist, providing general help and directing users appropriately."),
     MessagesPlaceholder(variable_name="chat_history"),
     HumanMessagePromptTemplate.from_template("{input}")
@@ -90,33 +95,38 @@ def agent_orchestrator(user_question: str) -> Callable[[State], dict]:
     response = orchestrator_model.invoke(orchestrator_prompt.format(input=user_question))
     agent_name = response.content.strip().lower()  # Get the agent name recommended by the orchestrator
 
+<<<<<<< HEAD
     # Route the user question to the appropriate agent
     if agent_name == "cat":
         logger.info("Routing to cat agent.")
+=======
+    if agent_name == "cat minion":
+        logger.info("Routing to cat minion.")
+>>>>>>> develop
         return cat_agent
-    elif agent_name == "dog":
-        logger.info("Routing to dog agent.")
+    elif agent_name == "dog minion":
+        logger.info("Routing to dog minion.")
         return dog_agent
-    elif agent_name == "monkey":
-        logger.info("Routing to monkey agent.")
+    elif agent_name == "monkey minion":
+        logger.info("Routing to monkey minion.")
         return monkey_agent
     else:
-        logger.info("Routing to receptionist agent.")
+        logger.info("Routing to chat minion.")
         return receptionist_agent
 
 # Functions representing each agent
 # Each function below is designed to handle the conversation state by invoking the respective agent.
 def cat_agent(state: State) -> dict:
-    return invoke_agent(state, cat_model, cat_prompt, "cat")
+    return invoke_agent(state, cat_model, cat_minion_prompt, "cat minion")
 
 def dog_agent(state: State) -> dict:
-    return invoke_agent(state, dog_model, dog_prompt, "dog")
+    return invoke_agent(state, dog_model, dog_minion_prompt, "dog minion")
 
 def monkey_agent(state: State) -> dict:
-    return invoke_agent(state, monkey_model, monkey_prompt, "monkey")
+    return invoke_agent(state, monkey_model, monkey_minion_prompt, "monkey minion")
 
 def receptionist_agent(state: State) -> dict:
-    return invoke_agent(state, receptionist_model, receptionist_prompt, "receptionist")
+    return invoke_agent(state, receptionist_model, chat_minion_prompt, "chat minion")
 
 # Function to invoke a specific agent based on the provided model and prompt
 # This function standardizes how each agent interacts with the user.

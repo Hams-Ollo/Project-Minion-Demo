@@ -92,6 +92,7 @@ User: i love dogs
 AI: Oh, you love dogs too! That's fantastic! Dogs are such wonderful companions, aren't they? So loyal, loving, and always eager to please. They bring so much joy and happiness into our lives. Do you have a dog at home?
 --------------------------------------------------
 2024-10-06 18:11:26,630 [INFO] 127.0.0.1 - - [06/Oct/2024 18:11:26] "POST /chat HTTP/1.1" 200 -
+<<<<<<< HEAD
 2024-10-07 09:53:14,177 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 2024-10-07 09:53:14,178 [INFO] [33mPress CTRL+C to quit[0m
@@ -234,3 +235,21 @@ User: I need a random cat facts
 AI: Did you know that cats have a special organ called the Jacobson's organ, which allows them to detect pheromones and other scents that are too subtle for humans to detect? It's located in the nasal cavity and helps them navigate their environment and communicate with other cats.
 --------------------------------------------------
 2024-10-07 11:09:56,889 [INFO] 127.0.0.1 - - [07/Oct/2024 11:09:56] "POST /chat HTTP/1.1" 200 -
+=======
+2024-10-06 18:14:47,536 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-06 18:14:47,537 [INFO] [33mPress CTRL+C to quit[0m
+2024-10-09 13:35:59,974 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2024-10-09 13:35:59,975 [INFO] [33mPress CTRL+C to quit[0m
+2024-10-09 13:36:15,969 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 13:36:15,984 [INFO] Routing to receptionist agent.
+2024-10-09 13:36:15,984 [INFO] [94m[receptionist agent] Received input: helllo[0m
+2024-10-09 13:36:16,231 [INFO] HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2024-10-09 13:36:16,233 [INFO] [92m[receptionist agent] Response: Hello! How can I assist you today?[0m
+2024-10-09 13:36:16,234 [INFO] 
+User: helllo
+AI: Hello! How can I assist you today?
+--------------------------------------------------
+2024-10-09 13:36:16,235 [INFO] 127.0.0.1 - - [09/Oct/2024 13:36:16] "POST /chat HTTP/1.1" 200 -
+>>>>>>> develop
