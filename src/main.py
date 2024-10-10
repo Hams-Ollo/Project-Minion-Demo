@@ -157,8 +157,8 @@ import logging
 
 # Initialize Streamlit app
 st.set_page_config(page_title="Project Minion", page_icon="🤖")
-st.title("Project Minion's AI Assistant 🤖")
-st.write("Welcome to Project Minion! This AI Assistant routes your queries to specialized minion agents to assist with answering queries or performing specific functional tasks.")
+st.title("Project Minion 🤖")
+st.write("Welcome to Project Minion! This AI Assistant routes your queries to specialized minion agents to assist with answering queries or performing specific tasks.")
 
 # Add a sidebar for additional user controls
 st.sidebar.title("Minion Toolkit 🤖")
