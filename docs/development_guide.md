@@ -8,19 +8,23 @@
    - Clone the Project Minion repository
 
 2. **Install dependencies**
-   ```
+
+   ```python
    pip install -r requirements.txt
    ```
 
 3. **Set up environment variables**
+
    - Create a `.env` file in the project root
    - Add the following variables:
-     ```
+
+     ```python
      GROQ_API_KEY=your_groq_api_key
      ```
 
 4. **Run the application**
-   ```
+
+   ```python
    streamlit run src/main.py
    ```
 
@@ -105,6 +109,7 @@
 - Failed checks must be addressed before merging
 
 For more detailed information on specific components, refer to:
+
 - [API Client Documentation](api_client.md)
 - [Project Architecture](project-architecture-doc.md)
 - [LangGraph Integration Guide](project-echo-langraph-integration-guide-v2.md)

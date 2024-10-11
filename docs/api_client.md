@@ -16,16 +16,19 @@ The `api_client.py` file in the `src` directory contains the implementation of t
 To use the API client in your code:
 
 1. Import the API client class:
+
    ```python
    from src.api_client import APIClient
    ```
 
 2. Initialize the client with your API key:
+
    ```python
    client = APIClient(api_key=your_groq_api_key)
    ```
 
 3. Make API requests using the client methods:
+
    ```python
    response = client.make_request(endpoint, method, data)
    ```
@@ -33,6 +36,7 @@ To use the API client in your code:
 ## Error Handling
 
 The API client includes robust error handling to manage common issues such as:
+
 - Network errors
 - Authentication failures
 - Rate limiting
